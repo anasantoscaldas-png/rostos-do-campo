@@ -1,1 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pontes de Afeto — Do Campo à Cidade</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300..800&display=swap');
+        .font-serif { font-family: 'Lora', serif; }
+        .font-sans { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-[#faf8f5] text-stone-800 font-sans antialiased min-h-screen flex flex-col">
 
+    <nav class="bg-emerald-900 text-stone-100 py-5 px-6 sticky top-0 z-50 backdrop-blur-md bg-opacity-95 shadow-sm">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold tracking-tight text-amber-100 hover:text-amber-200 transition">Pontes de Afeto</a>
+            <div class="space-x-8 font-medium text-sm tracking-wide">
+                <a href="index.html" class="text-amber-200 border-b-2 border-amber-200 pb-1">Início</a>
+                <a href="historias.html" class="hover:text-amber-200 transition pb-1">Histórias</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative bg-stone-900 text-white py-32 px-6 overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center opacity-40 mix-blend-overlay" style="background-image: url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1200&q=80');"></div>
+        <div class="relative max-w-4xl mx-auto text-center z-10">
+            <span class="text-xs font-semibold uppercase tracking-widest text-amber-400 bg-amber-400/10 px-3 py-1 rounded-full mb-6 inline-block">Conexão Humana</span>
+            <h2 class="text-4xl md:text-6xl font-serif font-bold mb-6 leading-tight">Mais que alimentos, colhemos histórias.</h2>
+            <p class="text-lg md:text-xl text-stone-300 max-w-2xl mx-auto mb-10 font-light leading-relaxed">
+                Por trás de cada ingrediente na mesa da cidade, existe uma trajetória de vida, suor e sonhos no campo. Conecte-se com quem alimenta nossa alma.
+            </p>
+            <a href="historias.html" class="bg-amber-500 hover:bg-amber-600 text-stone-950 font-bold tracking-wide py-4 px-8 rounded-full shadow-lg transition transform hover:-translate-y-0.5 inline-block text-sm">
+                Conhecer os Relatos
+            </a>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-3xl mx-auto py-24 px-6 text-center">
+        <h3 class="text-3xl md:text-4xl font-serif font-bold text-emerald-950 mb-8">O laço invisível que nos une</h3>
+        <div class="space-y-6 text-lg leading-relaxed text-stone-600 font-light">
+            <p>
+                A rotina acelerada dos grandes centros urbanos costuma resumir o campo a gôndolas de supermercado e códigos de barra. Mas a verdadeira relação entre a terra e o asfalto não é comercial — ela é **humana**.
+            </p>
+            <p>
+                Este espaço nasceu para dar voz a quem cultiva. Queremos que você conheça o olhar de quem acorda antes do sol, o orgulho de famílias que preservam tradições e as mãos que transformam o solo em sustento.
+            </p>
+        </div>
+        <div class="mt-12 flex justify-center gap-4 text-emerald-800 font-medium italic">
+            <span>🌾 Da terra</span>
+            <span>•</span>
+            <span>🏙️ Ao coração</span>
+        </div>
+    </main>
+
+    <footer class="bg-stone-950 text-stone-500 py-8 px-6 text-center text-sm border-t border-stone-900">
+        <p>&copy; 2026 Pontes de Afeto. Criando pontes empáticas entre o campo e a cidade.</p>
+    </footer>
+
+</body>
+</html>
