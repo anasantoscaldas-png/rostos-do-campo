@@ -1,1 +1,34 @@
+/* ==========================================================================
+   css/style.css - Detalhes Visuais e Animações
+   ========================================================================== */
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+    background-color: #f59e0b; /* Cor Amber */
+    color: #064e3b;            /* Cor Emerald Escuro */
+}
+
+/* Animação suave para o surgimento dos cards */
+@keyframes cardFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#container-historias article {
+    animation: cardFadeIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
